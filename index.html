@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Studio Thaís Oliveira | Extensão de Cílios e Sobrancelhas</title>
+    <meta name="description" content="Sua autoestima através do olhar. Especialista em extensão de cílios, design de sobrancelhas e cursos VIP em Arinos/MG." />
+    
+    <!-- Google Fonts: Playfair Display & Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              rose: {
+                50: '#fff0f3',
+                100: '#ffe4e9',
+                200: '#fecdd6',
+                300: '#fea3b4',
+                gold: '#B76E79', // Brand Color
+                dark: '#9e5a64',
+              },
+              gold: {
+                DEFAULT: '#D4AF37',
+                light: '#F4D06F',
+              },
+              gray: {
+                900: '#2D2D2D', // Softer black
+                800: '#4A4A4A',
+                600: '#666666',
+                50: '#FAFAFA', 
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              sans: ['"Poppins"', 'sans-serif'],
+            },
+            boxShadow: {
+              'soft': '0 20px 40px -10px rgba(183, 110, 121, 0.1)',
+              'card': '0 10px 30px -5px rgba(0, 0, 0, 0.03)',
+              'glow': '0 0 20px rgba(183, 110, 121, 0.15)'
+            },
+            animation: {
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+      
+      body {
+        background-color: #ffffff;
+        color: #2D2D2D;
+      }
+
+      /* Custom Scrollbar */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #FAFAFA;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #B76E79;
+        border-radius: 10px;
+      }
+      
+      /* Utilities */
+      .text-balance {
+        text-wrap: balance;
+      }
+      
+      .dashed-border-container {
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='24' ry='24' stroke='%23B76E79' stroke-width='1' stroke-dasharray='8%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 0.4s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+      }
+
+      @keyframes slideUp {
+        from { transform: translateY(100%); opacity: 0; }
+        to { transform: translateY(0); opacity: 1; }
+      }
+      
+      .animate-slide-up {
+        animation: slideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+</head>
+  <body class="antialiased overflow-x-hidden selection:bg-rose-100 selection:text-rose-900">
+    <div id="root"></div>
+  </body>
+</html>
